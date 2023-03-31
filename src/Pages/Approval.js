@@ -7,7 +7,7 @@ function Approval() {
     <div className="approval-page">
       <h1 className="text-2xl font-bold mb-6">Document Check Complete</h1>
       <div className="p-6 bg-white shadow-lg rounded-lg">
-        <p className="mb-4"> ISO 30137-1:2023 Generated 15/01/2023. KE</p>
+        <p className="mb-4"> ISO 30137-1:2023 Generated 15/01/2023. KE Winkynet Technologies Limited</p>
       </div>
       <div className="flex items-center mt-6 gap-x-3">
         <Link
