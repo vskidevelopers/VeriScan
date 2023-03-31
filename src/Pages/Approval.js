@@ -1,34 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Confetti from "react-confetti";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Approval() {
-  const [approved, setApproved] = useState(false);
-
-  useEffect(() => {
-    setApproved(true);
-
-    // Show pop-up message
-    toast.success("Document has been added!", {
-      position: toast.POSITION.TOP_CENTER,
-      autoClose: 3000,
-      hideProgressBar: true,
-    });
-  }, []);
-
   return (
     <div className="approval-page">
-      {approved && <Confetti />}
-      <h1 className="text-2xl font-bold mb-6">Document Approval</h1>
+      <h1 className="text-2xl font-bold mb-6">Document Check Complete</h1>
       <div className="p-6 bg-white shadow-lg rounded-lg">
-        <p className="mb-4 text-center"> Congrats!🥳</p>
-        <p className="mb-4">
-          {" "}
-          Document No: <span className="font-bold">dRGJ132UdskjaKJ1</span>{" "}
-          verified: 100% authentic
-        </p>
+        <p className="mb-4"> ISO 30137-1:2023 Generated 15/01/2023. KE</p>
       </div>
       <div className="flex items-center mt-6 gap-x-3">
         <Link
